@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortsharif/API-Task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fortsharif/API-Task/issues"
+  },
+  "homepage": "https://github.com/fortsharif/API-Task#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite-async": "^1.1.2"
+  },
+  "devDependencies": {
+    "jest": "^27.2.5",
+    "supertest": "^6.1.6"
+  }
+}
