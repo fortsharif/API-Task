@@ -5,15 +5,17 @@ const dbName = 'parkit.db'
 
 module.exports = class UserController {
     static async addUser(req, res, next) {
+
         const email = req.body.email
         const firstName = req.body.firstName
         const surname = req.body.surname
 
+        if (firstName.length <= 0 && surname.length <= 0) {
+            return res.status(500).json({ error: 'name length is not enough' })
+        }
 
 
-        // implement userexists
 
-        // sanitise email
 
         const User = await new UserModule(dbName)
 
@@ -41,6 +43,8 @@ module.exports = class UserController {
         const User = await new UserModule(dbName)
         const id = req.params.id
         const newEmail = req.body.email
+
+        console.log(id, newEmail)
 
         let update = await User.updateUser(id, newEmail)
 
