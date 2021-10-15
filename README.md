@@ -1,5 +1,5 @@
 # API-Task
-back-end server for API task
+back-end server for API task, built using node.js, express, sqlite3
 
 ## Installing dependencies
 
