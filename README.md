@@ -9,6 +9,10 @@ back-end server for API task, built using node.js, express, sqlite3
 
 `node index.js`
 
+## Running tests
+
+`npm test`
+
 ## Front end UI can be found @
 
 https://github.com/fortsharif/front-end-task
